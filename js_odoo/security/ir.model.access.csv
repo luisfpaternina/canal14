@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+manager_model_sale_order_wizard,user_model_sale_order_wizard,model_sale_order_wizard,js_odoo.wizard_sale_order,1,1,1,1
