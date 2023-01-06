@@ -11,15 +11,15 @@
                    <attribute name="js_class">button_in_tree</attribute>
                 </xpath>
 
-                <!--
+                
                 <xpath expr="//form/header/button[8]" position="after">
                     <button 
-                        name="action_get_attachment"
+                        name="generate_data_report"
                         type="object"
-                        string="Send Email to Contact"
+                        string="Generate report"
                         />
                 </xpath>
-                -->
+                
            </field>
        </record>
    </data>
