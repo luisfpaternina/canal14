@@ -11,15 +11,25 @@
                    <attribute name="js_class">button_in_tree</attribute>
                 </xpath>
 
-                <xpath expr="//field[(@name='partner_id')]" position="after">
-                    <button 
+           </field>
+       </record>
+
+       <record id="view_sale_order_inherit_introdoo" model="ir.ui.view">
+        <field name="name">sale.orderform.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//form/header/button[8]" position="after">
+                <button 
                         name="generate_data_report"
                         type="object"
                         string="Generate report"
                         />
-                </xpath>
-                
-           </field>
-       </record>
+            </xpath>
+
+        </field> 
+    </record>
+
    </data>
 </odoo>
