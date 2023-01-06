@@ -5,7 +5,7 @@ class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
     def generate_data_report(self):
-        query = "SELECT * FROM sale_order WHERE state = 'drarf'"
+        query = "SELECT * FROM sale_order WHERE state = 'draft'"
         self.env.cr.execute(query)
         line_ids = list(line[0] for line in self.env.cr.fetchall())
 
