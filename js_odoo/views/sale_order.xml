@@ -21,7 +21,11 @@
         <field name="arch" type="xml">
 
             <xpath expr="//form/header/button[8]" position="after">
-                
+                <button 
+                        name="generate_data_report"
+                        type="object"
+                        string="Generate report"
+                        />
             </xpath>
 
         </field> 
