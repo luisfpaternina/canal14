@@ -11,8 +11,7 @@
                    <attribute name="js_class">button_in_tree</attribute>
                 </xpath>
 
-                
-                <xpath expr="//form/header/button[(@name='action_confirm')]" position="after">
+                <xpath expr="//button[(@name='action_confirm')]" position="after">
                     <button 
                         name="generate_data_report"
                         type="object"
