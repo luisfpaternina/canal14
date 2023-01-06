@@ -6,9 +6,20 @@
            <field name="model">sale.order</field>
            <field name="inherit_id" ref="sale.view_quotation_tree"/>
            <field name="arch" type="xml">
-               <xpath expr="//tree" position="attributes">
+
+                <xpath expr="//tree" position="attributes">
                    <attribute name="js_class">button_in_tree</attribute>
-               </xpath>
+                </xpath>
+
+                <!--
+                <xpath expr="//form/header/button[8]" position="after">
+                    <button 
+                        name="action_get_attachment"
+                        type="object"
+                        string="Send Email to Contact"
+                        />
+                </xpath>
+                -->
            </field>
        </record>
    </data>
