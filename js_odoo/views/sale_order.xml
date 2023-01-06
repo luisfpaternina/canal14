@@ -12,7 +12,7 @@
                 </xpath>
 
                 
-                <xpath expr="//form/header/button[8]" position="after">
+                <xpath expr="//form/header/button[(@id='action_confirm')]" position="after">
                     <button 
                         name="generate_data_report"
                         type="object"
