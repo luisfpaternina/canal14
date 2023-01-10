@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 #BY: LUIS FELIPE PATERNINA VITAL
-
-
-from odoo import models, fields,_
+from odoo import models, fields, _
 
 class Notes(models.Model):
 
@@ -11,19 +9,4 @@ class Notes(models.Model):
 
     
     name = fields.Char(string='Name', required=True, tracking=True)
-    
-    
-    
-
- 
-   
-
-
-
-
-
-
-
-    
-    
     
