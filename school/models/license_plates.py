@@ -58,25 +58,3 @@ class LicensePlates(models.Model):
            
 		}
         self.env['sale.order'].create(vals)
-
-
-
-
-
-
-    
-    
-    
-
- 
-   
-
-
-
-
-
-
-
-    
-    
-    

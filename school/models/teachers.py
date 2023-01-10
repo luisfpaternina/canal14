@@ -1,16 +1,12 @@
 # -*- coding: utf-8 -*-
 #BY: LUIS FELIPE PATERNINA VITAL
-
-
 from odoo import models, fields,_
 
 class Teachers(models.Model):
 
     _name = "teachers"
     _description = "Teachers"
-   
 
-    
     name = fields.Char(string='Name', required=True, tracking=True)
     identification_type = fields.Selection([('cc','CC'),('ni','TI'),('ce','Passport')], string="Identification type", tracking=True)
     identification_number = fields.Char(string="Identification number", tracking=True)
@@ -35,16 +31,3 @@ class Teachers(models.Model):
         ('vu','Widower'),
         ('sep','Divorced'),
         ('other','Other')],string="Civil state")
-
- 
-   
-
-
-
-
-
-
-
-    
-    
-    
