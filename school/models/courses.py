@@ -11,4 +11,15 @@ class Courses(models.Model):
     credit_number = fields.Integer(string="Credit Numbers")
     teacher_id = fields.Many2one('teachers',string="Teacher in charge")
     area_ids = fields.Many2many('area', string="Related areas")
-    area_id_custom = fields.Char(string="Areas")
+    area_id_custom = fields.Char(string="Areas", compute="_get_areas")
+
+
+    @api.model
+    @api.depends('area_ids')
+    def _get_areas(self):
+        for rec in self:
+            if rec.area_ids:
+                area_custom = ','.join([p.name for p in rec.area_ids])
+                rec.area_id_custom = area_custom
+            else:
+                rec.area_id_custom = ''
